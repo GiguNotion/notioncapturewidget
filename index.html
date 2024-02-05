@@ -4,12 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camera App</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        #camera, #photoCanvas {
+            width: 100%;
+            height: auto;
+        }
+
+        button, input[type="file"] {
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
-    <video id="camera" width="100%" height="auto" autoplay></video>
+    <video id="camera" autoplay></video>
     <button id="captureBtn">📷</button>
     <input type="file" accept="image/*" id="uploadInput" style="display: none;">
-    <button id="uploadBtn">🖼️</button>
+    <button id="uploadBtn">📤</button>
     <canvas id="photoCanvas" style="display: none;"></canvas>
 
     <script>
