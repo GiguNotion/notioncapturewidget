@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy ASP.Net Core app to Azure Web App - NotionOCRWidgets
+name: Build and deploy ASP.Net Core app to Azure Web App - Notionocrwidgets
 
 on:
   push:
@@ -51,7 +51,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'NotionOCRWidgets'
+          app-name: 'Notionocrwidgets'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_EAFA6832F7F148EDA42A7D8209DAE0AA }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CF77D62AFB2D4B86912B9D8F8F3A9E86 }}
           package: .
