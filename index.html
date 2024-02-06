@@ -12,24 +12,24 @@
             flex-direction: column;
             align-items: flex-start;
             justify-content: flex-start;
-            overflow: hidden; /* Add this line to hide the scrollbar */
+            overflow: hidden; /* Hide the scrollbar */
+        }
+
+        #captureBtn, #uploadBtn {
+            margin: 10px 0;
         }
 
         #camera, #photoCanvas {
             width: 100%;
             height: auto;
         }
-
-        button, input[type="file"] {
-            margin: 10px 0;
-        }
     </style>
 </head>
 <body>
-    <video id="camera" autoplay></video>
     <button id="captureBtn">Capture Photo</button>
     <input type="file" accept="image/*" id="uploadInput" style="display: none;">
     <button id="uploadBtn">Upload Photo</button>
+    <video id="camera" autoplay></video>
     <canvas id="photoCanvas" style="display: none;"></canvas>
 
     <script>
